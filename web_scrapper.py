@@ -64,7 +64,7 @@ def get_account_pictures(account_url):
                 
             print('Image sucessfully Downloaded: ',filename)
         else:
-            print('Image Couldn\'t be retreived')
+            print('Image Couldn\'t be retrieved')
 
 
 def main():
