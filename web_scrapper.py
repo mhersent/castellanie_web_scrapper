@@ -46,10 +46,11 @@ def get_account_pictures(account_url):
         if not os.path.exists(dest_folder):
             os.makedirs(dest_folder)  # create folder if it does not exist
 
+        # On split depuis la fin jusqu'au premier "/" rencontré (-> le nom du document dans l'url)
         filename = picture_url.split("/")[-1]
         filepath = os.path.join(dest_folder, filename)
 
-        print(filepath)
+        # print(filepath)
 
         img = requests.get(picture_url, stream = True)
 
